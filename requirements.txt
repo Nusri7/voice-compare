@@ -1,0 +1,7 @@
+numpy
+scikit-learn
+joblib
+torchaudio
+speechbrain
+python-multipart
+soundfile

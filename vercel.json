@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/get-similarity.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/get-similarity",
+      "dest": "/api/get-similarity.py"
+    }
+  ]
+}
