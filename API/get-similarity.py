@@ -34,7 +34,7 @@ def get_similarity(audio_path1, audio_path2):
     score, prediction = speaker_verification.verify_batch(signal1, signal2)
     return float(score), bool(prediction)
 
-@app.post("/get-similarity")
+@app.post("/")
 async def similarity(request: AudioFiles):
     try:
         # Save audio files temporarily for processing
